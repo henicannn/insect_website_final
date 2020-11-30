@@ -43,8 +43,8 @@ function assembleBug() {
     circleOne.classList.add("hidden");
     circleTwo.classList.add("hidden");
     circleThree.classList.add("hidden");
-    circleFour.classList.remove("hidden");
-    circleFive.classList.remove("hidden");
+    circleFour.classList.add("hidden");
+    circleFive.classList.add("hidden");
     gsap.to(circles[0], 1, { opacity: 0, ease: Power2.easeOut });
     gsap.to(circles[1], 1, { opacity: 0, ease: Power2.easeOut });
     gsap.to(circles[2], 2, { opacity: 0, ease: Power2.easeOut });

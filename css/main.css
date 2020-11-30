@@ -415,16 +415,19 @@ video {
     font-weight: 700;
     padding-left: 50px;
     padding-top: 10px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
-#info0 li {
+#info0 p {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
+    width: 450px;
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
+    line-height: 30px;
+    padding-top: 20px;
 }
 
 #info1 {
@@ -439,16 +442,19 @@ video {
     font-weight: 700;
     padding-left: 50px;
     padding-top: 10px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
-#info1 li {
+#info1 p {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
+    width: 450px;
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
+    line-height: 30px;
+    padding-top: 20px;
 }
 
 #info2 {
@@ -463,16 +469,18 @@ video {
     font-weight: 700;
     padding-left: 50px;
     padding-top: 10px;
-    padding-bottom: 50px;
 }
 
-#info2 li {
+#info2 p {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
+    width: 450px;
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
+    line-height: 30px;
+    padding-top: 20px;
 }
 
 #info3 {
@@ -487,16 +495,18 @@ video {
     font-weight: 700;
     padding-left: 50px;
     padding-top: 10px;
-    padding-bottom: 50px;
 }
 
-#info3 li {
+#info3 p {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
+    width: 450px;
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
+    line-height: 30px;
+    padding-top: 20px;
 }
 
 #info4 {
@@ -511,16 +521,18 @@ video {
     font-weight: 700;
     padding-left: 50px;
     padding-top: 10px;
-    padding-bottom: 50px;
 }
 
-#info4 li {
+#info4 p {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
+    width: 450px;
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
+    line-height: 30px;
+    padding-top: 20px;
 }
 
 .lib_logo {
