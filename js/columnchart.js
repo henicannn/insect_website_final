@@ -1,23 +1,6 @@
-const openButton = document.querySelector('.openButton');
-const closeButton = document.querySelector('.closeButton');
-
-
-function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-
-}
-
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-
-openButton.addEventListener('click', openNav);
-closeButton.addEventListener('click', closeNav);
-
 google.charts.load("current", { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
+
 
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
@@ -45,7 +28,9 @@ function drawChart() {
         height: 400,
         bar: { groupWidth: "95%" },
         legend: { position: "none" },
+
     };
+
     var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
     chart.draw(view, options);
 }

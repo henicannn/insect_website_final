@@ -45,8 +45,8 @@
 
 .about_page {
     /* background-image: linear-gradient(-180deg, #ffffff, #00000052); */
-    /* height: 1920px; */
-    /* overflow: auto; */
+    height: 100vh;
+    overflow: hidden;
 }
 
 #bar {
@@ -701,6 +701,7 @@ model-viewer {
 
 .slider {
     margin-left: 50px;
+    /* overflow: hidden; */
 }
 
 .replace_text p {
@@ -712,7 +713,7 @@ model-viewer {
     word-spacing: 5px;
     padding-bottom: 50px;
     padding-top: 100px;
-    width: 500px;
+    width: 900px;
 }
 
 .buttons {
@@ -733,4 +734,8 @@ model-viewer {
 .btn:hover {
     background-color: rgb(126, 126, 126);
     transition: 0.8s;
+}
+
+.info_one {
+    margin-bottom: 300px;
 }
