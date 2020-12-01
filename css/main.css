@@ -667,7 +667,7 @@ video {
     justify-content: center;
     align-items: center;
     padding-top: 150px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 .library h2 {
@@ -683,26 +683,31 @@ video {
 }
 
 model-viewer {
-    width: 1280px;
+    width: 1000px;
     height: 500px;
-    /* background-color: #000000 */
+    background-color: rgba(155, 208, 241, 0.377);
 }
 
-.model_viewer {
+.about_flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.model_viewer p {
+.about_info_one p {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    text-align: center;
-    padding: 25px 300px;
+    text-align: left;
+    /* padding: 25px 300px; */
     font-size: 20px;
     line-height: 2em;
     word-spacing: 5px;
     padding-bottom: 100px;
     padding-top: 100px;
+    padding-left: 50px;
+    /* padding-right: 20px; */
 }
