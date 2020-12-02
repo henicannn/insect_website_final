@@ -5,10 +5,18 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ["Element", "Density", { role: "style" }],
-        ["Copper", 8.94, "#b87333"],
-        ["Silver", 10.49, "silver"],
-        ["Gold", 19.30, "gold"],
-        ["Platinum", 21.45, "color: #e5e4e2"]
+        ["JAN", 4, "#CCEBFF"],
+        ["FEB", 4, "#CCEBFF"],
+        ["MAR", 12, "#B2E1FF"],
+        ["APR", 69, "#66C4FF"],
+        ["MAY", 307, "#33B0FF"],
+        ["JUN", 879, "#008DE5"],
+        ["JUL", 969, "#007DCC"],
+        ["AUG", 874, "#009DFF"],
+        ["SEPT", 409, "#19A6FF"],
+        ["OCT", 122, "#4CBAFF"],
+        ["NOV", 39, "#7FCEFF"],
+        ["DEC", 18, "#99D7FF"],
     ]);
 
     var view = new google.visualization.DataView(data);
@@ -23,8 +31,8 @@ function drawChart() {
     ]);
 
     var options = {
-        title: "Density of Precious Metals, in g/cm^3",
-        width: 600,
+        title: "Number of Chalybion californicum observed in a year",
+        width: 900,
         height: 400,
         bar: { groupWidth: "95%" },
         legend: { position: "none" },

@@ -699,11 +699,6 @@ model-viewer {
     padding-right: 50px;
 }
 
-.slider {
-    margin-left: 50px;
-    /* overflow: hidden; */
-}
-
 .replace_text p {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -717,7 +712,7 @@ model-viewer {
 }
 
 .buttons {
-    padding-left: 250px;
+    padding-left: 100px;
 }
 
 .btn {
@@ -738,4 +733,5 @@ model-viewer {
 
 .info_one {
     margin-bottom: 300px;
+    background-image: #23abff7e;
 }
