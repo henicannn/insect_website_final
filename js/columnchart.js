@@ -4,7 +4,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ["Element", "Density", { role: "style" }],
+        ["Element", "Observations of Chalybion californicum", { role: "style" }],
         ["JAN", 4, "#CCEBFF"],
         ["FEB", 4, "#CCEBFF"],
         ["MAR", 12, "#B2E1FF"],
