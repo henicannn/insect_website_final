@@ -66,7 +66,57 @@
                 </section>
 
                 <section class="info_one">
-                    <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+                    <section id="columnchart_values" style="width: 900px; height: 300px;">
+                        <script type="text/javascript">
+                            google.charts.load('current');
+                            google.charts.setOnLoadCallback(coloumnChart);
+
+
+                            function coloumnChart() {
+                                var BarChartwrapper = new google.visualization.ChartWrapper({
+                                    chartType: 'ColumnChart',
+                                    dataTable: [
+                                        ['Months', 'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEPT', 'OCT', 'NOV', 'DEC'],
+                                        ['', 4, 4, 12, 69, 307, 879, 969, 874, 409, 122, 39, 18]
+                                        // ["FEB", 4, "#CCEBFF"],
+                                        // ["MAR", 12, "#B2E1FF"],
+                                        // ["APR", 69, "#66C4FF"],
+                                        // ["MAY", 307, "#33B0FF"],
+                                        // ["JUN", 879, "#008DE5"],
+                                        // ["JUL", 969, "#007DCC"],
+                                        // ["AUG", 874, "#009DFF"],
+                                        // ["SEPT", 409, "#19A6FF"],
+                                        // ["OCT", 122, "#4CBAFF"],
+                                        // ["NOV", 39, "#7FCEFF"],
+                                        // ["DEC", 18, "#99D7FF"],
+                                    ],
+
+                                    options: {
+                                        title: "Number of Chalybion californicum observed in a year",
+                                        hAxis: {
+                                            title: 'Months',
+                                        },
+                                        vAxis: {
+                                            title: 'Chalybion californicum observed',
+                                        },
+                                        width: 900,
+                                        height: 450,
+                                        bar: {
+                                            groupWidth: "95%"
+                                        },
+                                        legend: {
+                                            position: "bottom"
+                                        },
+
+                                    },
+                                    containerId: 'columnchart_values'
+
+                                });
+                                BarChartwrapper.draw();
+                                // var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));chart.draw(view, options);
+                            }
+                        </script>
+                    </section>
                 </section>
 
 
@@ -91,10 +141,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/columnchart.js"></script>
-    <script src="js/columnChart2.js"></script>
+
     <script src="js/geoChart.js"></script>
     <script src="js/nav.js"></script>
+
 
 
 </body>
