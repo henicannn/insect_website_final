@@ -6,9 +6,6 @@ var infoTwo = document.querySelector('.info_two')
 var infoThree = document.querySelector('.info_three')
 
 
-window.onload = infoTwo.classList.add("hidden");
-window.onload = infoThree.classList.add("hidden");
-
 function one() {
     infoOne.classList.remove("hidden");
     infoTwo.classList.add("hidden");

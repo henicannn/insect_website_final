@@ -110,7 +110,65 @@
 
 
                 <section class="info_two">
-                    <div id="regions_div" style="width: 700px; height: 500px;"></div>
+                    <section id="scatterchart_values" style="width: 900px; height: 300px;">
+                        <script type="text/javascript">
+                            google.charts.load('current'); // Don't need to specify chart libraries!
+                            google.charts.setOnLoadCallback(scatterChart);
+
+                            function scatterChart() {
+                                var ScatterChartwrapper = new google.visualization.ChartWrapper({
+                                    chartType: 'ScatterChart',
+                                    dataTable: [
+                                        ['Months', 'Number of Adults Observed'],
+                                        ['JAN', 1],
+                                        ['FEB', 0],
+                                        ['MAR', 2],
+                                        ['APR', 4],
+                                        ['MAY', 17],
+                                        ['JUN', 68],
+                                        ['JUL', 65],
+                                        ['AUG', 66],
+                                        ['SEPT', 30],
+                                        ['OCT', 8],
+                                        ['NOV', 3],
+                                        ['DEC', 0]
+                                    ],
+                                    options: {
+                                        title: 'Number of Adults Observed in each month',
+                                        hAxis: {
+                                            title: 'Months',
+
+                                        },
+                                        vAxis: {
+                                            title: 'Number of Adults Observed',
+                                            minValue: 0,
+                                            maxValue: 100,
+                                        },
+                                        pointSize: 20,
+                                        pointShape: 'square',
+
+                                        backgroundColor: '#fff',
+                                        width: 900,
+                                        height: 450,
+
+                                        trendlines: {
+
+                                            0: {
+                                                type: 'exponential',
+                                                visibleInLegend: true,
+                                            },
+
+                                        },
+
+                                        legend: 'bottom'
+
+                                    },
+                                    containerId: 'scatterchart_values'
+                                });
+                                ScatterChartwrapper.draw();
+                            }
+                        </script>
+                    </section>
                 </section>
 
                 <section class="info_three">
