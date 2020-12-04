@@ -191,7 +191,10 @@
     background-color: rgb(0, 157, 255)
 }
 
-.explore a {
+.intro_info_one a {
+    display: block;
+    text-align: center;
+    padding: 17px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
@@ -565,6 +568,10 @@ video {
     cursor: pointer;
 }
 
+.insect_one img {
+    width: 400px;
+}
+
 .insect_two {
     width: 600px;
     height: 400px;
@@ -581,6 +588,10 @@ video {
     transition: 0.8s;
     filter: grayscale(0%);
     cursor: pointer;
+}
+
+.insect_two img {
+    width: 300px;
 }
 
 .lib_insects_two {
@@ -607,6 +618,10 @@ video {
     cursor: pointer;
 }
 
+.insect_three img {
+    width: 300px;
+}
+
 .insect_four {
     width: 600px;
     height: 400px;
@@ -620,6 +635,7 @@ video {
 
 .insect_four img {
     margin-top: -75px;
+    width: 400px;
 }
 
 .insect_four:hover {
@@ -733,5 +749,25 @@ model-viewer {
 
 .info_one {
     margin-bottom: 300px;
-    background-image: #23abff7e;
+    background-color: #23abff7e;
+}
+
+#info0 img {
+    width: 500px;
+}
+
+#info1 img {
+    width: 500px;
+}
+
+#info2 img {
+    width: 500px;
+}
+
+#info3 img {
+    width: 500px;
+}
+
+#info4 img {
+    width: 500px;
 }
