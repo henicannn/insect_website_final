@@ -133,16 +133,16 @@
                 <section class="info_two">
                     <h3 class="hidden">Visualization two and Info</h3>
 
-                    <section id="scatterchart_values" style="width: 900px; height: 300px;">
+                    <section id="linechart_values" style="width: 900px; height: 300px;">
                         <h3 class="hidden">Visualization two</h3>
 
                         <script type="text/javascript">
                             google.charts.load('current'); // Don't need to specify chart libraries!
-                            google.charts.setOnLoadCallback(scatterChart);
+                            google.charts.setOnLoadCallback(lineChart);
 
-                            function scatterChart() {
-                                var ScatterChartwrapper = new google.visualization.ChartWrapper({
-                                    chartType: 'ScatterChart',
+                            function lineChart() {
+                                var LineChartwrapper = new google.visualization.ChartWrapper({
+                                    chartType: 'LineChart',
                                     dataTable: [
                                         ['Months', 'Number of Adults Observed'],
                                         ['JAN', 1],
@@ -169,28 +169,24 @@
                                             minValue: 0,
                                             maxValue: 100,
                                         },
-                                        pointSize: 20,
-                                        pointShape: 'square',
+                                        curveType: 'function',
+                                        legend: {
+                                            position: 'bottom'
+                                        },
+
+
 
                                         backgroundColor: '#fff',
                                         width: 900,
                                         height: 450,
 
-                                        trendlines: {
-
-                                            0: {
-                                                type: 'exponential',
-                                                visibleInLegend: true,
-                                            },
-
-                                        },
 
                                         legend: 'bottom'
 
                                     },
-                                    containerId: 'scatterchart_values'
+                                    containerId: 'linechart_values'
                                 });
-                                ScatterChartwrapper.draw();
+                                LineChartwrapper.draw();
                             }
                         </script>
                     </section>
