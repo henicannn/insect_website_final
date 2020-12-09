@@ -727,7 +727,7 @@ video {
 
 model-viewer {
     width: 1000px;
-    height: 500px;
+    height: 550px;
     background-color: rgba(155, 208, 241, 0.377);
 }
 
@@ -755,18 +755,36 @@ model-viewer {
 }
 
 .buttons {
-    padding-left: 100px;
+    padding-left: 30px;
 }
 
 .btn {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     width: 50px;
     height: 50px;
     border: none;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 157, 255);
+    border-radius: 20px;
+    animation-name: btnglow;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes btnglow {
+    /* start at 0% to end 100% */
+    0% {
+        box-shadow: 0 0 2px rgba(255, 0, 106, 0.678);
+    }
+    100% {
+        box-shadow: 0 0 15px rgb(0, 17, 255);
+    }
 }
 
 .btn:hover {
@@ -777,6 +795,32 @@ model-viewer {
 .info_one {
     margin-bottom: 300px;
     background-color: #23abff7e;
+}
+
+.info_three h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.info_three p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 15px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+.info_three a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 15px;
+    padding-left: 50px;
+    line-height: 30px;
 }
 
 #info0 img {
