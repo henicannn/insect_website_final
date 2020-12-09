@@ -17,6 +17,8 @@ var circleTwo = document.getElementById('circle1');
 var circleThree = document.getElementById('circle2');
 var circleFour = document.getElementById('circle3');
 var circleFive = document.getElementById('circle4');
+var circleSix = document.getElementById('circle5');
+
 
 
 
@@ -29,11 +31,13 @@ function explodeBug() {
     circleThree.classList.remove("hidden");
     circleFour.classList.remove("hidden");
     circleFive.classList.remove("hidden");
+    circleSix.classList.remove("hidden");
     gsap.to(circles[0], 1, { delay: 2, opacity: 1, ease: Power2.easeOut });
     gsap.to(circles[1], 1, { delay: 2, opacity: 1, ease: Power2.easeOut });
     gsap.to(circles[2], 2, { delay: 2, opacity: 1, ease: Power2.easeOut });
     gsap.to(circles[3], 2, { delay: 2, opacity: 1, ease: Power2.easeOut });
     gsap.to(circles[4], 2, { delay: 2, opacity: 1, ease: Power2.easeOut });
+    gsap.to(circles[5], 2, { delay: 2, opacity: 1, ease: Power2.easeOut });
 
 }
 
@@ -45,11 +49,15 @@ function assembleBug() {
     circleThree.classList.add("hidden");
     circleFour.classList.add("hidden");
     circleFive.classList.add("hidden");
+    circleSix.classList.add("hidden");
+
     gsap.to(circles[0], 1, { opacity: 0, ease: Power2.easeOut });
     gsap.to(circles[1], 1, { opacity: 0, ease: Power2.easeOut });
     gsap.to(circles[2], 2, { opacity: 0, ease: Power2.easeOut });
     gsap.to(circles[3], 2, { opacity: 0, ease: Power2.easeOut });
     gsap.to(circles[4], 2, { opacity: 0, ease: Power2.easeOut });
+    gsap.to(circles[5], 2, { opacity: 0, ease: Power2.easeOut });
+
 }
 
 

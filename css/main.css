@@ -392,6 +392,11 @@ video {
     opacity: 0;
 }
 
+#circle5 {
+    top: 350px;
+    opacity: 0;
+}
+
 .boxes {
     visibility: hidden;
     text-align: left;
@@ -421,12 +426,11 @@ video {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     width: 450px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
     line-height: 30px;
-    padding-top: 20px;
 }
 
 #info1 {
@@ -448,12 +452,11 @@ video {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     width: 450px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
     line-height: 30px;
-    padding-top: 20px;
 }
 
 #info2 {
@@ -474,12 +477,11 @@ video {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     width: 450px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
     line-height: 30px;
-    padding-top: 20px;
 }
 
 #info3 {
@@ -500,12 +502,11 @@ video {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     width: 450px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
     line-height: 30px;
-    padding-top: 20px;
 }
 
 #info4 {
@@ -526,12 +527,38 @@ video {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     width: 450px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-left: 50px;
     line-height: 30px;
-    padding-top: 20px;
+}
+
+#info5 {
+    top: -380px;
+    left: 451px;
+    display: flex;
+    flex-direction: row;
+}
+
+#info5 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    top: -380px;
+    left: 451px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 600;
+    margin-top: 300px;
+}
+
+.length {
+    width: 3px;
+    height: 700px;
+    /* margin-top: 10px; */
+    background-color: #000000;
 }
 
 .lib_logo {
