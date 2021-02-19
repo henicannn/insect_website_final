@@ -25,20 +25,20 @@
 }
 
 .intro_page {
-    background-image: linear-gradient(-180deg, #ffffff, #9bd0f19c);
+    background-image: linear-gradient(-180deg, #ffffff, #ffffff);
     overflow: hidden;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
 .bug_page {
-    background-image: linear-gradient(-180deg, #ffffff, #9bd0f19c);
+    background-image: linear-gradient(-180deg, #ffffff, #ffffff);
     height: 100vh;
     overflow: hidden;
 }
 
 .library_page {
-    background-image: linear-gradient(-180deg, #ffffff, #9bd0f19c);
+    background-image: linear-gradient(-180deg, #ffffff, #ffffff);
     height: 100vh;
     overflow: hidden;
 }
